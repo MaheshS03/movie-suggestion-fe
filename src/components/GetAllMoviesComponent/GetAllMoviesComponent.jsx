@@ -8,7 +8,7 @@ const GetAllMoviesComponent = () => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:3500/api/v1/movie/`)
+            .get(`https://movie-suggestion-be-ten.vercel.app/api/v1/movie/`)
             .then(response => setMovies(response.data))
             .catch((error) => {
                 if(error.response)
